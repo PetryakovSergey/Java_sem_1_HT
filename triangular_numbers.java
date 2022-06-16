@@ -15,6 +15,11 @@ public class triangular_numbers {
         Scanner iScanner = new Scanner(System.in);
         System.out.printf("N: ");
         int N = iScanner.nextInt();
+        if (N == 0) {
+            System.out.printf("Введите число отличное от 0");
+            
+        }
+        else{
         double res =0.5 * N*(N+1);
         int value = (int) res;
         System.out.printf("triangular_number = ");
@@ -23,6 +28,7 @@ public class triangular_numbers {
         System.out.println(Tn(N));
 
         iScanner.close();
+        }
         
     }
 }
